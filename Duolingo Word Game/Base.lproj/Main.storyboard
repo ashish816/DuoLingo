@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tb5-1P-1YZ">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="20i-Jm-xlK">
+            <objects>
+                <viewController id="tb5-1P-1YZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dwg-br-pWX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Drk-qD-TVz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yk0-7F-gDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find all translations for a given word on each screen in your lingo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEc-tV-knC">
+                                <rect key="frame" x="40" y="324" width="334" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95021194220000005" green="0.31342532499999998" blue="0.26987863899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-AU-VwO">
+                                <rect key="frame" x="94" y="563" width="194" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qTN-9I-EyW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iEc-tV-knC" secondAttribute="trailing" constant="40" id="5WM-cJ-G87"/>
+                            <constraint firstItem="iEc-tV-knC" firstAttribute="leading" secondItem="Yk0-7F-gDQ" secondAttribute="leading" constant="40" id="HPK-cg-zzC"/>
+                            <constraint firstItem="YWM-AU-VwO" firstAttribute="top" secondItem="iEc-tV-knC" secondAttribute="bottom" constant="30" id="J25-IP-jLK"/>
+                            <constraint firstItem="YWM-AU-VwO" firstAttribute="centerX" secondItem="Yk0-7F-gDQ" secondAttribute="centerX" id="rNC-QW-a2y"/>
+                            <constraint firstItem="iEc-tV-knC" firstAttribute="centerY" secondItem="Yk0-7F-gDQ" secondAttribute="centerY" id="tbK-N1-pji"/>
+                            <constraint firstItem="iEc-tV-knC" firstAttribute="centerX" secondItem="Yk0-7F-gDQ" secondAttribute="centerX" id="yVY-qE-c2S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="AL7-pE-70U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcf-Rz-3cK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-301.44927536231887" y="136.95652173913044"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Duolingo_Word_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-Mn-0Ah">
+                                <rect key="frame" x="0.0" y="102" width="414" height="614"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gdQ-oC-zjR">
+                                    <size key="itemSize" width="109" height="91"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WordGameLetterCell" id="ucL-O0-KvQ" customClass="WordGameLetterCell" customModule="Duolingo_Word_Game" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="91"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmz-Hq-s4e">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="91"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="zmz-Hq-s4e" firstAttribute="leading" secondItem="ucL-O0-KvQ" secondAttribute="leading" id="0vL-de-qXb"/>
+                                            <constraint firstItem="zmz-Hq-s4e" firstAttribute="top" secondItem="ucL-O0-KvQ" secondAttribute="top" id="Egy-VQ-jm7"/>
+                                            <constraint firstItem="zmz-Hq-s4e" firstAttribute="centerX" secondItem="ucL-O0-KvQ" secondAttribute="centerX" id="chr-MH-MZt"/>
+                                            <constraint firstAttribute="bottom" secondItem="zmz-Hq-s4e" secondAttribute="bottom" id="p0y-AO-8Cx"/>
+                                            <constraint firstItem="zmz-Hq-s4e" firstAttribute="centerY" secondItem="ucL-O0-KvQ" secondAttribute="centerY" id="pSO-JP-hDr"/>
+                                            <constraint firstAttribute="trailing" secondItem="zmz-Hq-s4e" secondAttribute="trailing" id="pqg-3a-KrB"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="letterLabel" destination="zmz-Hq-s4e" id="uqu-N0-CuE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gFa-zx-iOm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="20b-HP-T2E"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dk-xk-lfF">
+                                <rect key="frame" x="162" y="40" width="91" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.95021194220000005" green="0.31342532499999998" blue="0.26987863899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OxK-Mn-0Ah" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0SG-iN-XoE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OxK-Mn-0Ah" secondAttribute="bottom" constant="20" id="2KW-Oa-d1e"/>
+                            <constraint firstItem="OxK-Mn-0Ah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Nf-Xn-BMh"/>
+                            <constraint firstItem="7Dk-xk-lfF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="K8g-nA-v31"/>
+                            <constraint firstAttribute="trailing" secondItem="OxK-Mn-0Ah" secondAttribute="trailing" id="TL0-dQ-nD5"/>
+                            <constraint firstItem="7Dk-xk-lfF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1w-53-ahT"/>
+                            <constraint firstItem="OxK-Mn-0Ah" firstAttribute="top" secondItem="7Dk-xk-lfF" secondAttribute="bottom" constant="20" id="k4K-02-5l7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameCollectionView" destination="OxK-Mn-0Ah" id="53f-gk-pHu"/>
+                        <outlet property="sourceWord" destination="7Dk-xk-lfF" id="IIZ-GM-CPg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="138"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qTN-9I-EyW"/>
+    </inferredMetricsTieBreakers>
+</document>
